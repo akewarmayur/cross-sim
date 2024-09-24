@@ -202,8 +202,7 @@ for q in range(config.Nruns):
                 digital_bias=config.digital_bias,
                 analog_batchnorm=analog_batchnorm,
                 adc_type=config.adc_type,
-                input_slice_size=config.input_slice_size,
-                export_conductances=config.export_conductances)
+                input_slice_size=config.input_slice_size)
 
             if Ncores == 1:
                 paramsList[j] = params
@@ -243,9 +242,7 @@ for q in range(config.Nruns):
         dataset_normalization=config.dataset_normalization,
         adc_range_option=config.adc_range_option,
         show_HW_config=config.show_HW_config,
-        return_network_output=config.return_network_output,
-        export_conductances=config.export_conductances,
-        conductances_dir=config.conductances_dir)
+        return_network_output=config.return_network_output)
 
     # Collect network outputs
     if config.return_network_output:

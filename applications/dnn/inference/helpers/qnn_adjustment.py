@@ -6,7 +6,7 @@
 #
 
 import numpy as np
-from simulator.parameters.core_parameters import CoreStyle, BitSlicedCoreStyle
+from simulator.parameters.core import CoreStyle, BitSlicedCoreStyle
 
 def qnn_adjustment(model_name, params_m, Wm, Ncores, m):
     """
